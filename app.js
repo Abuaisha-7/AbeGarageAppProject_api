@@ -18,7 +18,7 @@ app.use(express.json());
 // Add the sanitizer to the express middleware 
 app.use(sanitize.middleware);
 // Allow CORS to all
-app.use(cors(corsOptions));
+app.use(cors());
 // Import the routes
 const routes = require('./routes');
 // Add the routes to the middleware chain
